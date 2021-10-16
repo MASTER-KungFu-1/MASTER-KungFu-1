@@ -1,0 +1,17 @@
+using System; 
+
+public class Program {
+
+  public static void Main(string[] args) {
+    System.Console.OutputEncoding = System.Text.Encoding.UTF8;
+    Console.WriteLine("Введите числа");
+    int a = int.Parse(Console.ReadLine());
+    int b= int.Parse(Console.ReadLine());
+    int c = int.Parse(Console.ReadLine());
+    int min = 0;
+    int M = 0;
+    min = a<b ? a : b;
+    M = min<c ? min : c;
+    Console.WriteLine($"Минимальное число = {M}") ;
+  }
+}
